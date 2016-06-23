@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+}
+header, section, footer {
+  width: 100%;
+}
+header {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+.framework {
+  width: 1000px;
+  height: 90%;
+  margin: 0 auto;
+}
+.row {
+  width: 100%;
+  display: inline-block;
+  height: inherit;
+}
+.textGreen {
+  color: #14e5ab;
+}
+header p {
+  float: left;
+}
+#navBar {
+  list-style: none;
+  float: right
+}
+#navBar li {
+  display: inline-block;
+  margin-left: 20px;
+}
