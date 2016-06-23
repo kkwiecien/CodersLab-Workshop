@@ -1,23 +1,23 @@
 /* font linkup */
 @font-face {
-    font-family: 'ralewayregular';
+    font-family: 'raleway';
     src: url('../fonts/raleway-regular.woff2') format('woff2'),
          url('../fonts/raleway-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'ralewaybold';
+    font-family: 'raleway';
     src: url('../fonts/raleway-bold.woff2') format('woff2'),
          url('../fonts/raleway-bold.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 @font-face {
-    font-family: 'ralewaylight';
+    font-family: 'raleway';
     src: url('../fonts/raleway-light.woff2') format('woff2'),
          url('../fonts/raleway-light.woff') format('woff');
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -35,7 +35,7 @@ html, body {
 }
 header, section, footer {
   width: 100%;
-  font-family: 'ralewayregular', 'ralewaylight', 'ralewaybold', sans-serif;
+  font-family: 'raleway', sans-serif;
 }
 header {
   background-color: black;
@@ -52,7 +52,7 @@ header {
   height: inherit;
 }
 .textGreen {
-  color: #14e5ab;
+  color: #27c7ab; /* COMPANY COLOR HERE */
 }
 
 /* header style */
@@ -69,3 +69,111 @@ header p {
 }
 
 /* splash image style */
+#chairSplashImage {
+  background-image: linear-gradient(0deg,#cbced5,#ffffff);
+  display: inline-block;
+}
+#leftButton {
+  float: left;
+  line-height: 320px;
+  color: #27c7ab;
+  font-size: 40px;
+  width: 100px;
+  text-align: center;
+}
+#blackChairPic {
+  float: left;
+  width: 400px;
+}
+#blackChairText h2 {
+  text-transform: uppercase;
+  line-height: 120px;
+}
+#blackChairText {
+  float: left;
+  text-align: center;
+  width: 400px;
+  margin-bottom: 10px;
+}
+#blackChairButton {
+  width: 180px;
+  height: 2em;
+  color: white;
+  line-height: 35px;
+  background-color: #27c7ab;
+  border-radius: 7%;
+  text-transform: uppercase;
+  margin: auto;
+}
+#rightButton {
+  float: left;
+  line-height: 320px;
+  color: #27c7ab;
+  font-size: 40px;
+  width: 100px;
+  text-align: center;
+}
+
+/* previews style */
+.previews {
+  float: left;
+}
+#previewOne {
+  position: relative;
+}
+#previewTwo {
+  position: relative;
+}
+#previewOne img {
+  position: relative;
+  z-index: 1;
+}
+#previewOne div {
+  position: absolute;
+  z-index: 2;
+}
+#previewTwo img {
+  z-index: 1;
+}
+#previewTwo div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  z-index: 2;
+}
+.underlined {
+  border-bottom: 7px solid #27c7ab;
+}
+
+/* price tags style */
+
+/* contact form style */
+
+/* footer style */
+footer .framework {
+  vertical-align: bottom;
+  font-weight: 100;
+  color: #a9a9a9;
+}
+#copyrights {
+  float: left;
+  line-height: 45px;
+}
+#mediaName {
+  float: right;
+  width: 400px;
+}
+#copyrightsName {
+  text-transform: uppercase;
+  float: left;
+  width: 200px;
+  line-height: 45px;
+}
+#mediaButtons {
+  float: left;
+  width: 200px;
+}
+#nameBold {
+  font-weight: bold;
+}
