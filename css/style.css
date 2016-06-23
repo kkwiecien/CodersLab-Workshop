@@ -1,14 +1,41 @@
+/* font linkup */
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold.woff2') format('woff2'),
+         url('../fonts/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light.woff2') format('woff2'),
+         url('../fonts/raleway-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* style reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* style start */
+/* repeating segments */
 html, body {
   width: 100%;
 }
 header, section, footer {
   width: 100%;
+  font-family: 'ralewayregular', 'ralewaylight', 'ralewaybold', sans-serif;
 }
 header {
   background-color: black;
@@ -17,7 +44,6 @@ header {
 }
 .framework {
   width: 1000px;
-  height: 90%;
   margin: 0 auto;
 }
 .row {
@@ -28,6 +54,8 @@ header {
 .textGreen {
   color: #14e5ab;
 }
+
+/* header style */
 header p {
   float: left;
 }
@@ -39,3 +67,5 @@ header p {
   display: inline-block;
   margin-left: 20px;
 }
+
+/* splash image style */
