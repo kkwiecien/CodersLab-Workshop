@@ -59,6 +59,10 @@ header {
 header p {
   float: left;
 }
+header {
+  height: 40px;
+  padding-top: 10px;
+}
 #navBar {
   list-style: none;
   float: right
@@ -72,6 +76,8 @@ header p {
 #chairSplashImage {
   background-image: linear-gradient(0deg,#cbced5,#ffffff);
   display: inline-block;
+  height: 500px;
+  padding: 150px;
 }
 #leftButton {
   float: left;
@@ -115,14 +121,38 @@ header p {
 }
 
 /* previews style */
+#previewImages {
+  display: inline-block;
+  position: relative;
+  height: 350px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .previews {
   float: left;
+  width: 300px;
+}
+.previews:nth-of-type(2) {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.previews img {
+  max-width: 300px;
 }
 #previewOne {
   position: relative;
+  float: left;
 }
 #previewTwo {
   position: relative;
+}
+#previewTwo > div {
+  position:relative;
+}
+#previewTxt {
+  position: relative;
+  border: 1px solid #dbdbdb;
+  padding: 15px;
 }
 #previewOne img {
   position: relative;
@@ -130,9 +160,13 @@ header p {
 }
 #previewOne div {
   position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
   z-index: 2;
 }
 #previewTwo img {
+  position: relative;
   z-index: 1;
 }
 #previewTwo div {
@@ -143,10 +177,96 @@ header p {
   z-index: 2;
 }
 .underlined {
+  width: 150px;
   border-bottom: 7px solid #27c7ab;
+}
+.underlineFrame {
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255,255,255,0.5);
 }
 
 /* price tags style */
+#priceTags {
+  background-color: #f1f1f1;
+  display: inline-block;
+}
+p.underlined {
+  width: 300px;
+}
+.priceTag {
+  display: inline-block;
+  background-color: #f9f9f9;
+  margin-top: 50px;
+  padding: 20px;
+  width: 200px;
+  height: 250px;
+  border: 2px solid #d8d8d8;
+  position: relative;
+  z-index: 1;
+}
+.dotBig {
+  border: 2px solid #d8d8d8;
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -31px;
+  margin: auto;
+}
+.dotSmall {
+  background-color: #c2c2c2;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -16px;
+  margin: auto;
+}
+/* active change code
+#planExtra {
+  display: inline-block;
+  background-color: #27c7ab;
+  margin-top: 50px;
+  padding: 20px;
+  width: 200px;
+  height: 250px;
+  border: 2px solid #27c7ab;
+  position: relative;
+  z-index: 1;
+}
+#planExtra .dotBig {
+  border: 2px solid #27c7ab;
+  background-color: #27c7ab;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -31px;
+  margin: auto;
+}
+#planExtra .dotSmall {
+  background-color: #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -16px;
+  margin: auto;
+} */
 
 /* contact form style */
 
