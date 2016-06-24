@@ -42,6 +42,10 @@ header {
   color: white;
   text-transform: uppercase;
 }
+section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .framework {
   width: 1000px;
   margin: 0 auto;
@@ -125,8 +129,6 @@ header {
   display: inline-block;
   position: relative;
   height: 350px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .previews {
   float: left;
