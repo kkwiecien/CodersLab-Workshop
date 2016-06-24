@@ -194,16 +194,20 @@ header {
 p.underlined {
   width: 300px;
 }
+.priceTag:nth-of-type(2) {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 .priceTag {
   display: inline-block;
   background-color: #f9f9f9;
   margin-top: 50px;
-  padding: 20px;
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 500px;
   border: 2px solid #d8d8d8;
   position: relative;
   z-index: 1;
+  float: left;
 }
 .dotBig {
   border: 2px solid #d8d8d8;
@@ -230,43 +234,101 @@ p.underlined {
   top: -16px;
   margin: auto;
 }
-/* active change code
-#planExtra {
-  display: inline-block;
-  background-color: #27c7ab;
-  margin-top: 50px;
-  padding: 20px;
-  width: 200px;
-  height: 250px;
-  border: 2px solid #27c7ab;
+.priceBox {
+  height: 50%;
   position: relative;
-  z-index: 1;
 }
-#planExtra .dotBig {
+.planName {
+  margin-top: 25px;
+  color: #27c7ab;
+  text-align: center;
+}
+.priceCircle {
+  z-index: 2;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+.priceCircle p {
+  font-size: 45px;
+}
+.upperIndex {
+  font-size: 50%;
+  vertical-align: top;
+}
+.rate {
+  font-size: 40%;
+}
+.priceItems .itemBox {
+  height: 40px;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
+.priceItems .itemBox:nth-child(odd) {
+  background-color: #e4e4e4;
+  color: #9b9b9b;
+}
+.priceItems .itemBox:nth-child(even) {
+  background-color: #f1f1f1;
+  color: #737373;
+}
+.joinButton {
+  text-align: center;
+  color: white;
+  background-color: #27c7ab;
+  border-radius: 7%;
+  width: 100px;
+  height: 40px;
+  padding-top: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  margin: auto;
+}
+
+/* active change code */
+.priceTag:hover {
+  background-color: #27c7ab;
+  border: 2px solid #27c7ab;
+}
+.priceTag:hover .dotBig {
   border: 2px solid #27c7ab;
   background-color: #27c7ab;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -31px;
-  margin: auto;
 }
-#planExtra .dotSmall {
+.priceTag:hover .dotSmall {
   background-color: #ffffff;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  z-index: 3;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -16px;
-  margin: auto;
-} */
+}
+.priceTag:hover .planName {
+  color: white;
+}
+.priceTag:hover .priceCircle {
+  border-color: #27c7ab;
+  color: #27c7ab;
+}
+.priceTag:hover .itemBox:nth-child(odd) {
+  background-color: white;
+  color: #9a9a9a;
+}
+.priceTag:hover .itemBox:nth-child(even) {
+  background-color: #f1f1f1;
+  color: #b3b3b3;
+}
+.priceTag:hover .joinButton {
+  color: #27c7ab;
+  background-color: white;
+}
 
 /* contact form style */
 
