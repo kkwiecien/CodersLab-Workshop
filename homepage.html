@@ -6,14 +6,25 @@
     <title>Chair Store Homepage</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
+
     <header>
       <div class="framework">
         <div class="row">
           <p>Sit <span class="textGreen">on</span> chair</p>
           <nav>
             <ul id="navBar">
-              <li>O firmie</li>
+              <li id="dropDownButton">O firmie
+                <div id="dropDownTriangle"></div>
+                <div id="dropDownBox">
+                  <ul id="dropDownMenu">
+                    <li>Aktualności</li>
+                    <li>Nasz team</li>
+                    <li>Historia</li>
+                  </ul>
+                </div>
+              </li>
               <li>Galeria</li>
               <li>Kontakt</li>
             </ul>
@@ -147,9 +158,25 @@
       </div>
     </section>
 
-    <section id="contactForm">
+    <section id="contactForm" class="row"> <!-- contact form -->
       <div class="framework">
-        <p class="underlined">KONTAKT</p>
+        <div id="formFrames">
+          <p class="underlined">KONTAKT</p>
+          <form>
+            <input type="text" placeholder="Imię">
+          </form>
+          <form>
+            <input type="email" placeholder="email">
+          </form>
+          <form>
+            <input type="textarea" placeholder="Wiadomość">
+          </form>
+        </div>
+        <div id="formConfirm">
+          <img src="images/red_chair.png">
+          <form> <input type="checkbox"> Zgadzam się na przetwarzanie danych osobowych </form>
+          <form> <input type="submit" value="WYŚLIJ"> </form>
+        </div>
       </div>
     </section>
 
@@ -173,5 +200,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>
