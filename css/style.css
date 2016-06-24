@@ -303,12 +303,16 @@ p.underlined {
 .priceCircle p {
   font-size: 45px;
 }
+.priceCircle p:first-of-type {
+  padding-top: 15px;
+}
+.priceCircle p:last-of-type {
+  padding-top: 5px;
+  font-size: 20px;
+}
 .upperIndex {
   font-size: 50%;
   vertical-align: top;
-}
-.rate {
-  font-size: 40%;
 }
 .priceItems .itemBox {
   height: 40px;
@@ -380,8 +384,10 @@ p.underlined {
   margin-bottom: 20px;
 }
 #formConfirm {
-  float: right;
+  float: left;
   margin-top: 30px;
+  margin-left: 50px;
+  display: inline-block;
 }
 input {
   border: 1px solid #a6e3d3;
@@ -397,14 +403,15 @@ input[type="email"] {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-input[type="textarea"] {
+textarea {
   resize: none;
   width: 560px;
   height: 190px;
   vertical-align: top;
-}
-input[type="checkbox"] {
-  width: 50px;
+  border: 1px solid #a6e3d3;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 100;
 }
 input[type="submit"] {
   background-color: #27c7ab;
@@ -414,6 +421,22 @@ input[type="submit"] {
   height: 50px;
   width: 300px;
   border-radius: 7%;
+}
+.confirmBox {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #a6e3d3;
+  padding-top: 5px;
+  position: relative;
+  top: 5px;
+}
+#formConfirm p{
+  width: 300px;
+  position: relative;
+  left: 100px;
+  bottom: 20px;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 /* footer style */
