@@ -67,18 +67,18 @@ header {
   text-transform: uppercase;
   font-size: 13px;
 }
-#navBar {
+.navBar {
   list-style: none;
   float: right
 }
-#navBar li {
+.navBar li {
   display: inline-block;
   margin-left: 20px;
 }
-#dropDownButton {
+.dropDownButton {
   position: relative;
 }
-#dropDownBox {
+.dropDownBox {
   position: absolute;
   text-transform: none;
   width: 110px;
@@ -88,7 +88,7 @@ header {
   color: white;
   z-index: 10;
 }
-#dropDownTriangle {
+.dropDownTriangle {
   background-color: black;
   height: 20px;
   width: 20px;
@@ -98,19 +98,19 @@ header {
   top: 30px;
   left: 20px;
 }
-#dropDownMenu {
+.dropDownMenu {
   z-index: 9;
   list-style: none;
   display: block;
 }
-#dropDownMenu li {
+.dropDownMenu li {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-#dropDownButton * {
+.dropDownButton * {
   display: none;
 }
-#dropDownButton:hover * {
+.dropDownButton:hover * {
   display: inline-block;
 }
 
@@ -122,7 +122,7 @@ header {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-#leftButton {
+.leftButton {
   float: left;
   line-height: 320px;
   color: #27c7ab;
@@ -130,21 +130,21 @@ header {
   width: 100px;
   text-align: center;
 }
-#blackChairPic {
+.blackChairPic {
   float: left;
   width: 400px;
 }
-#blackChairText h2 {
+.blackChairText h2 {
   text-transform: uppercase;
   line-height: 120px;
 }
-#blackChairText {
+.blackChairText {
   float: left;
   text-align: center;
   width: 400px;
   margin-bottom: 10px;
 }
-#blackChairButton {
+.blackChairButton {
   width: 180px;
   height: 2em;
   color: white;
@@ -154,7 +154,7 @@ header {
   text-transform: uppercase;
   margin: auto;
 }
-#rightButton {
+.rightButton {
   float: left;
   line-height: 320px;
   color: #27c7ab;
@@ -391,6 +391,7 @@ p.underlined {
 }
 input {
   border: 1px solid #a6e3d3;
+  font-family: inherit;
   font-size: 20px;
   font-weight: 100;
   padding: 10px;
@@ -400,13 +401,14 @@ input[type="text"], input[type="email"] {
   height: 40px;
 }
 input[type="email"] {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 textarea {
+  font-family: inherit;
   resize: none;
   width: 560px;
-  height: 190px;
+  height: 220px;
   vertical-align: top;
   border: 1px solid #a6e3d3;
   padding: 10px;
@@ -430,11 +432,15 @@ input[type="submit"] {
   position: relative;
   top: 5px;
 }
+#formConfirm .confirmBox {
+  position: relative;
+  top: 15px;
+}
 #formConfirm p{
   width: 300px;
   position: relative;
-  left: 100px;
-  bottom: 20px;
+  left: 65px;
+  top: -30px;
   font-size: 18px;
   font-weight: 100;
 }
