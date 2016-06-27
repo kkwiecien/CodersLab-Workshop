@@ -180,37 +180,37 @@ header {
 .previews img {
   max-width: 300px;
 }
-#previewOne {
+.previewOne {
   position: relative;
   float: left;
 }
-#previewTwo {
+.previewTwo {
   position: relative;
 }
-#previewTwo > div {
+.previewTwo > div {
   position:relative;
 }
-#previewTxt {
+.previewTxt {
   position: relative;
   border: 1px solid #dbdbdb;
   padding: 15px;
 }
-#previewOne img {
+.previewOne img {
   position: relative;
   z-index: 1;
 }
-#previewOne div {
+.previewOne div {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 10px;
   z-index: 2;
 }
-#previewTwo img {
+.previewTwo img {
   position: relative;
   z-index: 1;
 }
-#previewTwo div {
+.previewTwo div {
   position: absolute;
   left: 0;
   right: 0;
@@ -377,13 +377,13 @@ p.underlined {
 
 /* contact form style */
 
-#formFrames {
+.formFrames {
   float: left;
 }
-#formFrames .underlined {
+.formFrames .underlined {
   margin-bottom: 20px;
 }
-#formConfirm {
+.formConfirm {
   float: left;
   margin-top: 30px;
   margin-left: 50px;
@@ -432,11 +432,11 @@ input[type="submit"] {
   position: relative;
   top: 5px;
 }
-#formConfirm .confirmBox {
+.formConfirm .confirmBox {
   position: relative;
   top: 15px;
 }
-#formConfirm p{
+.formConfirm p{
   width: 300px;
   position: relative;
   left: 65px;
@@ -451,24 +451,24 @@ footer .framework {
   font-weight: 100;
   color: #a9a9a9;
 }
-#copyrights {
+.copyrights {
   float: left;
   line-height: 45px;
 }
-#mediaName {
+.mediaName {
   float: right;
   width: 400px;
 }
-#copyrightsName {
+.copyrightsName {
   text-transform: uppercase;
   float: left;
   width: 200px;
   line-height: 45px;
 }
-#mediaButtons {
+.mediaButtons {
   float: left;
   width: 200px;
 }
-#nameBold {
+.nameBold {
   font-weight: bold;
 }
