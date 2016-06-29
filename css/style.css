@@ -83,7 +83,7 @@ header {
   text-transform: none;
   width: 110px;
   left: -23px;
-  bottom: -100px;
+  bottom: 0;
   background-color: black;
   color: white;
   z-index: 10;
@@ -109,6 +109,9 @@ header {
 }
 .dropDownButton * {
   display: none;
+}
+.dropDownButton:hover {
+  height: 115px;
 }
 .dropDownButton:hover * {
   display: inline-block;
