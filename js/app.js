@@ -40,5 +40,28 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   //image slider
+  var leftButton = document.querySelector('.leftButton');
+  var rightButton = document.querySelector('.rightButton');
+  var sliderImages = document.querySelector('.chairSlider').firstElementChild.children;
+  var sliderIndex = 0;
+
+  sliderImages[sliderIndex].style.display = 'inline-block';
+
+  leftButton.addEventListener('click', function(event){
+    sliderImages[sliderIndex].style.display = 'none';
+    sliderIndex--;
+    if (sliderIndex < 0) {
+      sliderIndex = sliderImages.length-1;
+    }
+    sliderImages[sliderIndex].style.display = 'inline-block';
+  });
+  rightButton.addEventListener('click', function(event){
+    sliderImages[sliderIndex].style.display = 'none';
+    sliderIndex++;
+    if (sliderIndex > sliderImages.length-1) {
+      sliderIndex = 0;
+    }
+    sliderImages[sliderIndex].style.display = 'inline-block';
+  });
 
 });

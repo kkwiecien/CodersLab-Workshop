@@ -137,8 +137,11 @@ header {
   float: left;
   width: 400px;
 }
-.sliderVisible {
-  display: inline-block;
+.chairSlider li {
+  display: none;
+}
+.chairSlider img {
+  max-width: 400px;
 }
 .blackChairText h2 {
   text-transform: uppercase;
