@@ -83,7 +83,7 @@ header {
   text-transform: none;
   width: 110px;
   left: -23px;
-  bottom: 0;
+  bottom: -100px; /*was 0*/
   background-color: black;
   color: white;
   z-index: 10;
@@ -107,15 +107,15 @@ header {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.dropDownButton * {
+/*.dropDownButton * {
   display: none;
-}
-.dropDownButton:hover {
+}*/
+/*.dropDownButton:hover {
   height: 115px;
-}
-.dropDownButton:hover * {
+}*/
+/*.dropDownButton:hover * {
   display: inline-block;
-}
+} removed CSS dropdown menu for JS dropdown menu*/
 
 /* splash image style */
 #chairSplashImage {
@@ -133,9 +133,12 @@ header {
   width: 100px;
   text-align: center;
 }
-.blackChairPic {
+.chairSlider {
   float: left;
   width: 400px;
+}
+.sliderVisible {
+  display: inline-block;
 }
 .blackChairText h2 {
   text-transform: uppercase;
